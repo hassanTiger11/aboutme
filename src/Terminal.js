@@ -15,7 +15,9 @@ export default function Terminal({post_json = ""}) {
     
   }
   return (
-    <div className='Terminal'>Terminal</div>
-    {view_posts()}
+    <div className='Terminal'>
+      {view_posts()}
+    </div>
+    
   )
 }
