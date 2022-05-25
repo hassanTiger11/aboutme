@@ -12,6 +12,19 @@ The modules:
         picture
         description
         date
+        link_to_service
 
 Contact:
 tbd
+
+
+I will create a file with all the posts (json):
+[
+    post#:
+        {
+            picture_path: "",
+            description: "",
+            date: "",
+            link_to_service: ""
+        }
+]
