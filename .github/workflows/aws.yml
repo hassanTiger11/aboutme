@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: personal_website           # set this to your Amazon ECR repository name #personal_ebsite
   ECS_SERVICE: sample-app-service                 # set this to your Amazon ECS service name #sample-app-service
   ECS_CLUSTER: default                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ./aws_skeleton # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: ./aws_skeleton.js # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: hassantiger11           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
