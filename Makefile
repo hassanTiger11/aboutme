@@ -5,6 +5,4 @@ run:
 
 
 aws-1:
-	aws ecr create-repository \
-    --repository-name hassantiger11 \
-    --region us-east-2
+	aws ecr create-repository --repository-name hassantiger11 --region us-east-2
