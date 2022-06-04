@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hassantiger11/static/css/main.80099951.css",
+    "main.js": "/hassantiger11/static/js/main.bf6b1c28.js",
+    "static/js/787.15a673a0.chunk.js": "/hassantiger11/static/js/787.15a673a0.chunk.js",
+    "static/media/logo.svg": "/hassantiger11/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/hassantiger11/index.html",
+    "main.80099951.css.map": "/hassantiger11/static/css/main.80099951.css.map",
+    "main.bf6b1c28.js.map": "/hassantiger11/static/js/main.bf6b1c28.js.map",
+    "787.15a673a0.chunk.js.map": "/hassantiger11/static/js/787.15a673a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80099951.css",
+    "static/js/main.bf6b1c28.js"
+  ]
+}
