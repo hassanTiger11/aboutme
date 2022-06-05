@@ -8,8 +8,9 @@ import "./Post.css"
     * date
     * link_to_service
  */
-export default function Post({pic, desc, dt, link = ""}) {
+export default function Post({pic, Title, desc, dt, link = ""}) {
     const [picture, setPicture] = useState(pic)
+    const [title, setTitle] = useState(Title)
     const [description, setDescription] = useState(desc)
     const [date, setDate] = useState(dt)
     const [link_to_service, set_link_to_service] = useState(link)
