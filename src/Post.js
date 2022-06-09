@@ -1,3 +1,4 @@
+import { Divider, ListItem } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
 import "./Post.css"
@@ -17,12 +18,16 @@ export default function Post({pic, Title, desc, dt, link = ""}) {
     
    
     return (
-        <div className='Post'>
-            <img src={picture}/>
-            <div className='Descrition'>{description}</div>
-            <div>{date}</div>
-            <a href={link_to_service}>go to service</a>
-        </div>
+        <>
+            <ListItem className='Post'>
+                
+                <img src={picture}/>
+                <div className='Descrition'>{description}</div>
+                <div>{date}</div>
+                <a href={link_to_service}>go to service</a>
+            </ListItem>
+            <Divider/>
+        </>
         
 
     )
