@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
-import "./Terminal.css"
+
 import Post from './Post'
-import { Divider, Grid, List } from '@mui/material'
-import { Container } from '@mui/system'
+import { Divider, Grid, List, ListItem } from '@mui/material'
+
 import { Skeleton } from '@mui/material'
 export default function Terminal({currPage, post_json = []}) {
 
-  const [post_lst, set_post_lst] = useState((post_json == [])? "post_lst.json": post_json)
+  const [post_lst, set_post_lst] = useState((post_json === [])? "post_lst.json": post_json)
 
   const view_posts= ()=>{
     const jsonFile = {}
@@ -24,15 +24,23 @@ export default function Terminal({currPage, post_json = []}) {
     })
     
   }
+  const empty_list = ()=>{
+    const lst = [1, 2, 3, 4, 5, 6, 7]
+    return lst.map((key)=>{
+      return <><ListItem><Skeleton animation="wave" variant="rectangular"  width="30vw" height="10vh" /></ListItem><Divider /></>
+    })
+      
+    
+  }
   return (
     <Grid container direction="column" alignItems="center" justify="center">
     <List justifyContent="center"
           alignItems="center" 
-          sx={{border:"1px solid",  textAlign: 'center' , minWidth:"70vw"}}>
-      <Grid item xs={3}>
-        {(post_lst.length==0) ? (<Skeleton variant="rectangular" width={210} height={118} />) : view_posts()}
+          sx={{border:"1px solid",  textAlign: 'center' , minWidth:"30vw", minHeight:"80vh"}}>
+      
+      {(post_lst.length===0) ? empty_list() : view_posts()}
 
-      </Grid>
+      
       
     </List>
     </Grid>

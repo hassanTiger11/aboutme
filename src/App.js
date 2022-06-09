@@ -1,15 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import TopBar from './TopBar';
+
+
+
 import Terminal from './Terminal';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ResponsiveAppBar from './ResponsiveAppBar';
-import { Card, Paper, Stack } from '@mui/material';
-import { ThemeProvider } from 'styled-components';
-
-import { createTheme } from '@mui/material/styles';
-import { Box } from '@mui/system';
+import { Paper, Stack } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
 
@@ -27,7 +24,7 @@ function App() {
   });
   const darkTheme = createTheme({
     palette: {
-      mode: 'dark',
+      mode: 'light',
     },
   });
   
@@ -36,12 +33,15 @@ function App() {
     document.title = "Hassan Alnamer"
   }, []);
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Stack spacing={10} sx={{ color: 'primary' }}>
+    <ThemeProvider theme={darkTheme} >
+      
+      
+      <Stack spacing={10} >
         <ResponsiveAppBar setCurrPage={setCurrPage}/> 
         <Terminal/>
        
       </Stack>
+      
     </ThemeProvider>
   );
 }

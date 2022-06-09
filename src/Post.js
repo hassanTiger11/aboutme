@@ -1,34 +1,40 @@
-import { Divider, ListItem } from '@mui/material'
-import React from 'react'
-import { useState } from 'react'
-import "./Post.css"
-/**
- * States to be kept taken care of:
-    * picture
-    * description
-    * date
-    * link_to_service
- */
-export default function Post({pic, Title, desc, dt, link = ""}) {
-    const [picture, setPicture] = useState(pic)
-    const [title, setTitle] = useState(Title)
-    const [description, setDescription] = useState(desc)
-    const [date, setDate] = useState(dt)
-    const [link_to_service, set_link_to_service] = useState(link)
-    
-   
-    return (
-        <>
-            <ListItem className='Post'>
-                
-                <img src={picture}/>
-                <div className='Descrition'>{description}</div>
-                <div>{date}</div>
-                <a href={link_to_service}>go to service</a>
-            </ListItem>
-            <Divider/>
-        </>
-        
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions, Divider, ListItem } from '@mui/material';
 
-    )
+export default function Post() {
+  return (
+      <>
+    <ListItem>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="/static/images/cards/contemplative-reptile.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
+    </Card>
+    </ListItem>
+    <Divider></Divider>
+    </>
+  );
 }
