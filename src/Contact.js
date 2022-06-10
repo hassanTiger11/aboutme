@@ -5,7 +5,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <Grid container direction="column" alignItems="center" justify="center">
-    <Card sx={{width:"20vw", minWidth:"480px", textAlign:"center", justifyContent:"center", paddingBottom:10}}>
+    <Card sx={{ textAlign:"center", justifyContent:"center", paddingBottom:10}}>
         
         <CardMedia
               component="img"

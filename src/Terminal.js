@@ -34,7 +34,7 @@ export default function Terminal({currPage, post_json = []}) {
   return (
     <Grid container direction="column" alignItems="center" justify="center">
     <List 
-          sx={{ textAlign: 'center' , minWidth:"720px", borderRadius:"10px", justifyContent:"center"}}>
+          sx={{ textAlign: 'center' , borderRadius:"10px", justifyContent:"center"}}>
       
       {(post_lst.length===0) ? empty_list() : view_posts()}
 

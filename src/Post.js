@@ -9,7 +9,7 @@ export default function Post({picture, title, description, date, link_to_service
   return (
     <>
       
-        <Card sx={{minHeight:"10vh", maxWidth:"720px"}}>
+        <Card sx={{minHeight:"10vh" }}>
           <CardActionArea>
             <CardMedia
               component="img"
