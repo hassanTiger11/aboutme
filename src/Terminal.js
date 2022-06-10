@@ -10,16 +10,15 @@ export default function Terminal({currPage, post_json = []}) {
   const [post_lst, set_post_lst] = useState((post_json === [])? "post_lst.json": post_json)
 
   const view_posts= ()=>{
-    const jsonFile = {}
-    try{
-      const jsonFile = JSON.parse(post_lst)
-    }catch(e){
-      return <div>Err: Acheievments too big to be loaded</div>
-    }
     
-    return Object.keys(jsonFile).map((key)=>{
-      <Post picture={jsonFile[key]['pic']} title={jsonFile[key]['title']} date={jsonFile[key]['dt']} description={jsonFile[key]['desc']}
-      link_to_service = {jsonFile[key]['link']}/>
+    console.log(post_json)
+    return post_json.map((key)=>{
+      
+      return <ListItem key={key['title']}>
+        <Post picture={key['picture']} title={key['title']} date={key['date']} description={key['description']}
+        link_to_service = {key['link_to_service']}/> 
+      </ListItem> 
+      
       
     })
     
@@ -27,16 +26,15 @@ export default function Terminal({currPage, post_json = []}) {
   const empty_list = ()=>{
     const lst = [1, 2, 3, 4, 5, 6, 7]
     return lst.map((key)=>{
-      return <><ListItem><Skeleton animation="wave" variant="rectangular"  width="30vw" height="10vh" /></ListItem><Divider /></>
+      return <><ListItem key={key}><Skeleton animation="wave" variant="rectangular"  width="30vw" height="10vh" /></ListItem><Divider /></>
     })
       
     
   }
   return (
     <Grid container direction="column" alignItems="center" justify="center">
-    <List justifyContent="center"
-          alignItems="center" 
-          sx={{border:"1px solid",  textAlign: 'center' , minWidth:"30vw", minHeight:"80vh"}}>
+    <List 
+          sx={{ textAlign: 'center' , minWidth:"720px", borderRadius:"10px", justifyContent:"center"}}>
       
       {(post_lst.length===0) ? empty_list() : view_posts()}
 

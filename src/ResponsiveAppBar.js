@@ -20,7 +20,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const ResponsiveAppBar = ({setCurrPage}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [bar_lst, set_bar_lst] = React.useState(["introduction", 'Projects', "contact"])
+  const [bar_lst, set_bar_lst] = React.useState(['Projects', "Contact"])
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -32,9 +32,11 @@ const ResponsiveAppBar = ({setCurrPage}) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const changePage = (page) =>{
-    handleCloseNavMenu();
+  const changePage = (e, page) =>{
+    
     setCurrPage(page);
+    handleCloseNavMenu();
+    
   }
 
   const handleCloseUserMenu = () => {
@@ -86,7 +88,7 @@ const ResponsiveAppBar = ({setCurrPage}) => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <GitHubIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -102,16 +104,16 @@ const ResponsiveAppBar = ({setCurrPage}) => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >
-            LOGO
-          </Typography>
+          />
+           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {bar_lst.map((page) => (
               <Button
                 key={page}
-                onClick={(page)=>changePage(page)}
+                onClick={(e)=>changePage(e, page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
+                
                 {page}
               </Button>
             ))}
