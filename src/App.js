@@ -14,7 +14,6 @@ import Contact from './Contact';
 
 
 
-
 function App() {
   const [currPage, setCurrPage] = useState("Projects")
   const theme = createTheme({
@@ -43,12 +42,12 @@ function App() {
       
       {console.log(currPage)}
       <Stack spacing={10} sx={{ backgroundColor:"primary.light", height:"100%", width:"100%", 
-      position: "absolute", left:"0", top:0, bottom:0, right:0, left:0
+      position: "fixed", left:0, top:0, bottom:0, right:0, left:0, margin:0, padding:0, overflowY:"auto"
       }}>
         <ResponsiveAppBar setCurrPage={setCurrPage}/> 
 
         <Grid container direction="column" alignItems="center" justify="center">
-          <Grid sx={{maxWidth:"50vw", minWidth:"380px"}}>
+          <Grid sx={{maxWidth:"50vw", minWidth:"380px",  paddingBottom:"10px"}}>
           {(currPage==="Projects") ? <Terminal currPage={currPage} post_json={Projects}/>: <Contact/>}
           </Grid>
         </Grid>
