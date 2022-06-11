@@ -78,7 +78,10 @@ const ResponsiveAppBar = ({setCurrPage}) => {
               }}
             >
               {bar_lst.map((page) => (
-                <MenuItem key={page} component={Link} to={"/aboutme/"+page} >
+                <MenuItem key={page}
+                 component={Link} 
+                 to={"/aboutme/"+page}
+                 onClick={handleCloseNavMenu} >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -108,6 +111,7 @@ const ResponsiveAppBar = ({setCurrPage}) => {
                 key={page}
                 component={Link}
                 to={"/aboutme/"+page}
+                onClick={handleCloseUserMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 

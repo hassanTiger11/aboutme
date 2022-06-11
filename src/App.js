@@ -69,4 +69,3 @@ function App() {
 }
 
 export default App;
-//{(currPage==="Projects") ? <Terminal currPage={currPage} post_json={Projects}/>: <Contact/>}
