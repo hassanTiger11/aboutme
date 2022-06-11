@@ -5,7 +5,7 @@ import Post from './Post'
 import { Divider, Grid, List, ListItem } from '@mui/material'
 
 import { Skeleton } from '@mui/material'
-export default function Terminal({currPage, post_json = []}) {
+export default function Terminal({ post_json = []}) {
 
   const [post_lst, set_post_lst] = useState((post_json === [])? "post_lst.json": post_json)
 

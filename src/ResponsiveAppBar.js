@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -32,12 +33,7 @@ const ResponsiveAppBar = ({setCurrPage}) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const changePage = (e, page) =>{
-    
-    setCurrPage(page);
-    handleCloseNavMenu();
-    
-  }
+  
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -82,7 +78,7 @@ const ResponsiveAppBar = ({setCurrPage}) => {
               }}
             >
               {bar_lst.map((page) => (
-                <MenuItem key={page} onClick={(e)=>changePage(e, page)}>
+                <MenuItem key={page} component={Link} to={"/aboutme/"+page} >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -110,7 +106,8 @@ const ResponsiveAppBar = ({setCurrPage}) => {
             {bar_lst.map((page) => (
               <Button
                 key={page}
-                onClick={(e)=>changePage(e, page)}
+                component={Link}
+                to={"/aboutme/"+page}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 
