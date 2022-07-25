@@ -11,7 +11,7 @@ export default function Contact() {
               component="img"
               height="140"
               image={require("./alt_github.jpg")}
-              sx={{position:"relative", top:0, left:0}}
+              
         />
 
         <Grid container direction="column" alignItems="center" justify="center">
