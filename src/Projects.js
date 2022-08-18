@@ -1,4 +1,4 @@
-let project_1={
+const project_1={
     picture:"",
     title: "Send_Mail",
     description:
@@ -7,7 +7,7 @@ let project_1={
     link_to_service: "https://github.com/hassanTiger11/send_mail"
 }
 
-let project_2={
+const project_2={
     picture:"",
     title: "PO_SQLite_DB",
     description:
@@ -15,4 +15,12 @@ let project_2={
     date: "04/11/2022",
     link_to_service: "https://github.com/hassanTiger11/po_sqlite_db"
 }
-export default [project_1, project_2]
+const project_3={
+    picture:"",
+    title: "Only Leagues",
+    description:
+    "This application help connect people who want to play sports together. You can sing up as a player, team manager, or a venue manager and find other people intersted in playing. I created this team in collaboration with three other students for a software engineering class.",
+    date: "11/11/2021",
+    link_to_service: "https://onlyleague.herokuapp.com/"
+}
+export default [project_3, project_2, project_1,]
