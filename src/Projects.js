@@ -23,4 +23,13 @@ const project_3={
     date: "11/11/2021",
     link_to_service: "https://onlyleague.herokuapp.com/"
 }
+const project_4={
+    picture:"",
+    title: "Only Leagues",
+    description:
+    "This is an unfinished project that I have learned from it a lot. I helped in creating an autoencoder to drop shadows from plant images. Although I wasn't able to finish the project on my own I built a great tool to process Tiff images into tensors that capable of ebing processed by Tensorflow librar.",
+    date: "03/02/2022",
+    link_to_service: "https://github.com/hassanTiger11/autoencoder"
+}
+
 export default [project_3, project_2, project_1,]
