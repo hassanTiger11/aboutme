@@ -17,15 +17,15 @@ const project_2={
 }
 const project_3={
     picture:"",
-    title: "Only Leagues",
+    title: "idc_classifier",
     description:
-    "This application help connect people who want to play sports together. You can sing up as a player, team manager, or a venue manager and find other people intersted in playing. I created this team in collaboration with three other students for a software engineering class.",
+    "I created this project in the process of interviewing for a software engineering position in medical center. The application is meant to help pathologists diagnose Inasive Ductal Carcinmoa. I trained a classifier model to classify tissue images of breast tissue and wrppaed it in a Flask server. I crated a user interface using react to query the sever.",
     date: "11/11/2021",
-    link_to_service: "https://onlyleague.herokuapp.com/"
+    link_to_service: "https://github.com/hassanTiger11/idc_classifier"
 }
 const project_4={
     picture:"",
-    title: "Only Leagues",
+    title: "autoencoder",
     description:
     "This is an unfinished project that I have learned from it a lot. I helped in creating an autoencoder to drop shadows from plant images. Although I wasn't able to finish the project on my own I built a great tool to process Tiff images into tensors that capable of ebing processed by Tensorflow librar.",
     date: "03/02/2022",
