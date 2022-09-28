@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/aboutme/static/js/main.84b16cbe.js",
+    "main.js": "/aboutme/static/js/main.dd5e46e9.js",
     "static/js/787.15a673a0.chunk.js": "/aboutme/static/js/787.15a673a0.chunk.js",
     "static/media/HassanAlnamer.jpeg": "/aboutme/static/media/HassanAlnamer.f006adb637c9ff355228.jpeg",
     "static/media/alt_github.jpg": "/aboutme/static/media/alt_github.32e4e485cb834ca10743.jpg",
     "static/media/linkedin.gif": "/aboutme/static/media/linkedin.f291e0697cd4aa5eb72f.gif",
     "static/media/github.gif": "/aboutme/static/media/github.7d909b64afc22f8b5ad3.gif",
     "index.html": "/aboutme/index.html",
-    "main.84b16cbe.js.map": "/aboutme/static/js/main.84b16cbe.js.map",
+    "main.dd5e46e9.js.map": "/aboutme/static/js/main.dd5e46e9.js.map",
     "787.15a673a0.chunk.js.map": "/aboutme/static/js/787.15a673a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.84b16cbe.js"
+    "static/js/main.dd5e46e9.js"
   ]
 }
