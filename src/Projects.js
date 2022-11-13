@@ -31,5 +31,12 @@ const project_4={
     date: "03/02/2022",
     link_to_service: "https://github.com/hassanTiger11/autoencoder"
 }
-
-export default [project_3, project_2, project_1,]
+const project_5={
+    picture:"",
+    title: "TicTacToe",
+    description:
+    "Simple Tic Tac Toe game built in react and deployed!",
+    date: "03/02/2022",
+    link_to_service: "https://tictactoebyhassan.herokuapp.com/"
+}
+export default [project_3, project_2, project_1, project_5]
